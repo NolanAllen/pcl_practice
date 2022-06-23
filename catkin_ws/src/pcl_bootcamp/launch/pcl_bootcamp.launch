@@ -1,0 +1,13 @@
+<launch>
+  <node type="pcl_bootcamp_node" pkg="pcl_bootcamp" name="PCL_Bootcamp" output="screen">
+    <param name="topic_name" value="/camera/depth/points"/>
+    <param name="output_name" value="output"/>
+    <param name="minFilterLtd" value="0.0"/>
+    <param name="maxFilterLtd" value="1.0"/>
+    <param name="axis" value="z"/>
+    <param name="disTh" value="10"/>
+    <param name="ptColorTh" value="6"/>
+    <param name="regColorTh" value="5"/>
+    <param name="clustersize" value="600"/>
+  </node>
+</launch>
